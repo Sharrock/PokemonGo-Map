@@ -75,7 +75,7 @@ if __name__ == '__main__':
             search_thread = Thread(target=search_loop, args=(args,))
         else:
             log.debug('Starting a fake search thread')
-            insert_mock_data()
+            #insert_mock_data()
             search_thread = Thread(target=fake_search_loop)
 
         search_thread.daemon = True
